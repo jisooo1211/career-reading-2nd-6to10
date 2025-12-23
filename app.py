@@ -147,7 +147,7 @@ def main():
                 st.write(content)
                 st.caption(f"글자수(공백 포함): {length}자")
                 with st.expander("이 문구만 복사하기"):
-                    st.text_area("Ctrl + A, Ctrl + C로 복사하세요.", value=content, height=160)
+                    st.text_area("Ctrl + A, Ctrl + C로 복사하세요.", value=content, height=160, key=f"copy_{selected_class}_{sid}")
 
     st.write("---")
     with st.expander("ℹ️ 사용 안내"):
